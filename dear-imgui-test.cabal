@@ -1,0 +1,35 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.36.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:           dear-imgui-test
+version:        0.0.1.0
+category:       App
+author:         Adrian Sieber
+maintainer:     Adrian Sieber
+license:        MIT
+build-type:     Simple
+extra-source-files:
+    README.md
+
+executable dear-imgui-test
+  main-is: Main.hs
+  other-modules:
+      Paths_dear_imgui_test
+  default-extensions:
+      BlockArguments
+      LambdaCase
+      OverloadedRecordDot
+      OverloadedStrings
+      PatternSynonyms
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      OpenGLRaw
+    , base
+    , dear-imgui
+    , managed
+    , sdl2
+    , text
+  default-language: GHC2021

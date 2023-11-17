@@ -1,0 +1,30 @@
+name: dear-imgui-test
+version: "0.0.1.0"
+license: MIT
+author: Adrian Sieber
+category: App
+extra-source-files:
+  - README.md
+
+default-extensions:
+  - BlockArguments
+  - LambdaCase
+  - OverloadedRecordDot
+  - OverloadedStrings
+  - PatternSynonyms
+
+executables:
+  dear-imgui-test:
+    language: GHC2021
+    main: Main.hs
+    ghc-options:
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
+    dependencies:
+      - base
+      - dear-imgui
+      - managed
+      - OpenGLRaw
+      - sdl2
+      - text

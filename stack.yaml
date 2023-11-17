@@ -1,0 +1,4 @@
+resolver: lts-21.20
+
+extra-deps:
+  - dear-imgui-2.2.0
